@@ -118,7 +118,7 @@ fun realizarSaque(saldo: Double): Double {
 }
 
 fun realizarDeposito(saldo: Double, extrato: MutableList<String>): Double {
-    println("\n--- DEPÓSITO ---")
+    println("\nDepósito")
     print("Informe o valor do depósito: R$ ")
     val valorStr = readLine()?.trim()
     val valor = valorStr?.toDoubleOrNull()
@@ -141,7 +141,7 @@ fun realizarDeposito(saldo: Double, extrato: MutableList<String>): Double {
 }
 
 fun realizarTransferencia(saldo: Double): Double {
-    println("\n--- TRANSFERÊNCIA ---")
+    println("\nTransferência")
     if (!validarSenha()) {
         println("Senha incorreta! Tente novamente.")
         return realizarTransferencia(saldo)
